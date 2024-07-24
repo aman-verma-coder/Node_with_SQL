@@ -1,0 +1,7 @@
+CREATE DATABASE Delta_App;
+
+USE Delta_App;
+
+CREATE TABLE USER(
+id INT PRIMARY KEY
+);

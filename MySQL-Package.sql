@@ -1,0 +1,4 @@
+CREATE DATABASE IF NOT EXISTS Delta_App;
+
+USE Delta_App;
+SELECT * FROM userinfo;

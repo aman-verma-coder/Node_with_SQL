@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Username</title>
+</head>
+
+<body>
+    <h2>You are about to edit your account registered with <%= resulttosend.email %>
+    </h2>
+    <form action="/user/<%= resulttosend.id %>?_method=PATCH" method="post">
+        <textarea name="name" id="" cols="30" rows="10"
+            placeholder="enter username"><%= resulttosend.name %></textarea><br><br>
+        <textarea name="password" id="" cols="30" rows="10" placeholder="enter password"></textarea>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
